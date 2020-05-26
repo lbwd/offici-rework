@@ -35,7 +35,7 @@ window.addEventListener('scroll', (e) => {
   if (window.scrollY >= 20) {
     border.style.top = '10px';
     border.style.left = '10px';
-    border.style.transform = 'scale(0.3)';
+    border.style.transform = 'scale(0.4)';
   }
   if (window.scrollY < 20) {
     border.style.top = logo.getBoundingClientRect().top + 'px';
@@ -43,3 +43,47 @@ window.addEventListener('scroll', (e) => {
     border.style.transform = 'scale(1)';
   }
 });
+
+document.addEventListener('mousemove', (e) => {
+  let el = document.getElementById('show-image');
+  el.style.left = e.clientX + 'px';
+  el.style.top = e.clientY + 25 + 'px';
+  console.log(e.clientX);
+  console.log(e.clientY);
+});
+
+Array.from(document.getElementsByClassName('show-name')).forEach((el) =>
+  el.addEventListener('mouseover', (e) => {
+    document.getElementById('show-image').classList.add('visible');
+  })
+);
+
+Array.from(document.getElementsByClassName('show-name')).forEach((el) =>
+  el.addEventListener('mouseout', (e) => {
+    document.getElementById('show-image').classList.remove('visible');
+  })
+);
+
+document
+  .getElementsByClassName('show-0')[0]
+  .addEventListener('mouseover', (e) => {
+    document.getElementById('show-image').style.backgroundColor = 'red';
+  });
+
+document
+  .getElementsByClassName('show-1')[0]
+  .addEventListener('mouseover', (e) => {
+    document.getElementById('show-image').style.backgroundColor = 'blue';
+  });
+
+document
+  .getElementsByClassName('show-2')[0]
+  .addEventListener('mouseover', (e) => {
+    document.getElementById('show-image').style.backgroundColor = 'green';
+  });
+
+document
+  .getElementsByClassName('show-3')[0]
+  .addEventListener('mouseover', (e) => {
+    document.getElementById('show-image').style.backgroundColor = 'yellow';
+  });
