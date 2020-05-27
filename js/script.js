@@ -81,9 +81,3 @@ document
   .addEventListener('mouseover', (e) => {
     document.getElementById('show-image').style.backgroundColor = 'green';
   });
-
-document
-  .getElementsByClassName('show-3')[0]
-  .addEventListener('mouseover', (e) => {
-    document.getElementById('show-image').style.backgroundColor = 'yellow';
-  });
