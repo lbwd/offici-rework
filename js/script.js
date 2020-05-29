@@ -44,40 +44,40 @@ window.addEventListener('scroll', (e) => {
   }
 });
 
-document.addEventListener('mousemove', (e) => {
+window.addEventListener('mousemove', (e) => {
   let el = document.getElementById('show-image');
   el.style.left = e.clientX + 'px';
-  el.style.top = e.clientY + 25 + 'px';
-  console.log(e.clientX);
-  console.log(e.clientY);
+  el.style.top = e.clientY - 50 + 'px';
 });
 
-Array.from(document.getElementsByClassName('show-name')).forEach((el) =>
-  el.addEventListener('mouseover', (e) => {
-    document.getElementById('show-image').classList.add('visible');
-  })
-);
+window.addEventListener('load', (e) => {
+  Array.from(document.getElementsByClassName('show-name')).forEach((el) =>
+    el.addEventListener('mouseover', (e) => {
+      document.getElementById('show-image').classList.add('visible');
+    })
+  );
 
-Array.from(document.getElementsByClassName('show-name')).forEach((el) =>
-  el.addEventListener('mouseout', (e) => {
-    document.getElementById('show-image').classList.remove('visible');
-  })
-);
+  Array.from(document.getElementsByClassName('show-name')).forEach((el) =>
+    el.addEventListener('mouseout', (e) => {
+      document.getElementById('show-image').classList.remove('visible');
+    })
+  );
 
-document
-  .getElementsByClassName('show-0')[0]
-  .addEventListener('mouseover', (e) => {
-    document.getElementById('show-image').style.backgroundColor = 'red';
-  });
+  document
+    .getElementsByClassName('show-0')[0]
+    .addEventListener('mouseover', (e) => {
+      document.getElementById('show-image').src = 'img/show-0.jpg';
+    });
 
-document
-  .getElementsByClassName('show-1')[0]
-  .addEventListener('mouseover', (e) => {
-    document.getElementById('show-image').style.backgroundColor = 'blue';
-  });
+  document
+    .getElementsByClassName('show-1')[0]
+    .addEventListener('mouseover', (e) => {
+      document.getElementById('show-image').src = 'img/show-1.png';
+    });
 
-document
-  .getElementsByClassName('show-2')[0]
-  .addEventListener('mouseover', (e) => {
-    document.getElementById('show-image').style.backgroundColor = 'green';
-  });
+  document
+    .getElementsByClassName('show-2')[0]
+    .addEventListener('mouseover', (e) => {
+      document.getElementById('show-image').src = 'img/show-2.png';
+    });
+});
