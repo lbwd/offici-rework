@@ -22,18 +22,11 @@
 //     border.style.transform = 'scale(0.30)';
 //   }
 // });
-window.addEventListener('load', () => {
-  const border = document.getElementsByClassName('border')[0];
-  const logo = document.getElementsByClassName('logo-container')[0];
-  border.style.top = logo.getBoundingClientRect().top + 'px';
-  border.style.left = logo.getBoundingClientRect().left + 'px';
-});
-
 window.addEventListener('scroll', (e) => {
   const border = document.getElementsByClassName('border')[0];
   const logo = document.getElementsByClassName('logo-container')[0];
   if (window.scrollY >= 20) {
-    border.style.top = '50px';
+    border.style.top = '30px';
     border.style.left = '10px';
     border.style.transform = 'scale(0.45)';
   }
@@ -54,6 +47,11 @@ window.addEventListener('mousemove', (e) => {
 });
 
 window.addEventListener('load', (e) => {
+  const border = document.getElementsByClassName('border')[0];
+  const logo = document.getElementsByClassName('logo-container')[0];
+  border.style.top = logo.getBoundingClientRect().top + 'px';
+  border.style.left = logo.getBoundingClientRect().left + 'px';
+
   Array.from(document.getElementsByClassName('show-name')).forEach((el) =>
     el.addEventListener('mouseover', (e) => {
       document.getElementById('show-image').classList.add('visible');
@@ -84,3 +82,32 @@ window.addEventListener('load', (e) => {
       document.getElementById('show-image').src = 'img/show-2.png';
     });
 });
+
+let currentTarget = 'top';
+let targets = [
+  'top',
+  'top-phrase',
+  'description',
+  'slider',
+  'shows',
+  'downloads',
+];
+window.smoothScroll = function () {
+  let target =
+    targets.indexOf(currentTarget) + 1 === targets.length
+      ? 'top'
+      : targets[targets.indexOf(currentTarget) + 1];
+
+  let button = document.getElementsByClassName('scroll-button')[0];
+  if (target === 'downloads') {
+    button.classList.add('reversed');
+  } else {
+    if (button.classList.contains('reversed')) {
+      button.classList.remove('reversed');
+    }
+  }
+  currentTarget = target;
+  var scrollContainer = document.getElementsByClassName(target)[0];
+
+  scrollContainer.scrollIntoView({ behavior: 'smooth' });
+};

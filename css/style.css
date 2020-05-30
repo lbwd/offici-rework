@@ -33,7 +33,7 @@ body {
   margin-left: -10px;
   flex-direction: row;
   align-items: flex-start;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -285,7 +285,6 @@ ol.show-list:first-child {
   display: flex;
   flex-direction: row;
   place-content: center;
-  align-items: center;
   width: 100%;
   margin-bottom: 75px;
 }
@@ -294,14 +293,25 @@ ol.show-list:first-child {
   height: 150px;
 }
 
+.logo-black {
+  position: absolute;
+  bottom: 50px;
+  left: -20px;
+  width: 218px;
+}
+
 .description-title {
   position: absolute;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
-  font-size: 80px;
-  left: 10px;
+  font-size: 64px;
+  left: 5px;
   top: 50px;
   z-index: 1;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  place-content: center;
 }
 
 .downloads {
@@ -406,6 +416,10 @@ ol.show-list:first-child {
   color: white;
 }
 
+.contacts a:visited {
+  color: white;
+}
+
 .contacts-right i {
   margin-right: 25px;
 }
@@ -436,4 +450,23 @@ ol.show-list:first-child {
 
 .footer a:link {
   color: white;
+}
+
+.footer a:visited {
+  color: white;
+}
+
+.scroll-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 5;
+  transition: 0.33s linear;
+}
+
+.scroll-button.reversed {
+  transform: rotate(180deg);
 }
