@@ -33,9 +33,9 @@ window.addEventListener('scroll', (e) => {
   const border = document.getElementsByClassName('border')[0];
   const logo = document.getElementsByClassName('logo-container')[0];
   if (window.scrollY >= 20) {
-    border.style.top = '10px';
+    border.style.top = '50px';
     border.style.left = '10px';
-    border.style.transform = 'scale(0.4)';
+    border.style.transform = 'scale(0.45)';
   }
   if (window.scrollY < 20) {
     border.style.top = logo.getBoundingClientRect().top + 'px';
@@ -46,8 +46,11 @@ window.addEventListener('scroll', (e) => {
 
 window.addEventListener('mousemove', (e) => {
   let el = document.getElementById('show-image');
-  el.style.left = e.clientX + 'px';
-  el.style.top = e.clientY - 50 + 'px';
+  if (el.classList.contains('visible')) {
+    el.style.left = e.clientX + 'px';
+    let container = document.getElementsByClassName('shows')[0];
+    el.style.top = e.clientY - container.getBoundingClientRect().top + 'px';
+  }
 });
 
 window.addEventListener('load', (e) => {
