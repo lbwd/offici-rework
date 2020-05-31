@@ -405,6 +405,8 @@ ol.show-list:first-child {
 
 .contacts #background-video {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contacts-content {
@@ -518,4 +520,135 @@ ol.show-list:first-child {
 
 .scroll-button.reversed {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1660px) {
+  .contacts {
+    height: 100vh;
+    max-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .contacts-table {
+    flex-direction: column;
+    height: 450px;
+    width: 800px;
+    margin-top: 50px;
+  }
+
+  .contacts-left {
+    width: 100%;
+    height: 200px;
+    border-right: none;
+    border-bottom: solid 5px white;
+    padding-left: 0;
+  }
+
+  .contacts-right {
+    width: 100%;
+    height: 250px;
+    padding-left: 50px;
+  }
+
+  .contacts-left > div {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .downloads {
+    height: 100vh;
+  }
+
+  .downloads-container {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brochure {
+    margin-right: 0;
+    margin-bottom: 75px;
+  }
+
+  .ticket {
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .description {
+    padding-bottom: 110px;
+    padding-right: 75px;
+    padding-left: 180px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .under-table {
+    font-size: 12px;
+  }
+
+  .contacts-table {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .logos {
+    margin-bottom: 25px;
+    margin-top: 50px;
+  }
+
+  .logos img {
+    height: 100px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .description {
+    padding-left: 75px;
+    padding-bottom: 200px;
+  }
+
+  .contacts-table {
+    width: 450px;
+  }
+
+  .contacts-left .left-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .description {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .logo,
+  .border {
+    width: 250px;
+  }
+
+  .description-title {
+    font-size: 50px;
+    width: 125px;
+  }
+
+  .logo-black {
+    width: 156px;
+    left: -11px;
+  }
+
+  .ticket,
+  .brochure {
+    height: 125px;
+  }
 }
