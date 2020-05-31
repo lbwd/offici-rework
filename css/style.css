@@ -275,6 +275,7 @@ ol.show-list:first-child {
   display: none;
   background-color: black;
   transition: left 0.2s, top 0.2s;
+  z-index: 1;
 }
 
 #show-image.visible {
@@ -312,6 +313,16 @@ ol.show-list:first-child {
   display: flex;
   align-items: center;
   place-content: center;
+}
+
+.offici-art-gallery {
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  right: 5px;
+  bottom: 50px;
+  width: 170px;
 }
 
 .downloads {
