@@ -127,6 +127,7 @@ body {
   );
   color: #eee;
   font-size: 120px;
+  overflow: hidden;
 }
 
 .top-phrase span {
