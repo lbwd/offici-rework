@@ -642,6 +642,7 @@ ol.show-list:first-child {
   .description-title {
     font-size: 50px;
     width: 125px;
+    top: 37.5px;
   }
 
   .logo-black {

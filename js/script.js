@@ -91,15 +91,21 @@ let targets = [
   'slider',
   'shows',
   'downloads',
+  'contacts',
 ];
 window.smoothScroll = function () {
   let target =
     targets.indexOf(currentTarget) + 1 === targets.length
       ? 'top'
       : targets[targets.indexOf(currentTarget) + 1];
-
   let button = document.getElementsByClassName('scroll-button')[0];
-  if (target === 'downloads') {
+
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    target = 'top';
+    button.classList.add('reversed');
+  }
+
+  if (target === 'contacts') {
     button.classList.add('reversed');
   } else {
     if (button.classList.contains('reversed')) {
