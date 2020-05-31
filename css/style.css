@@ -654,6 +654,11 @@ ol.show-list:first-child {
     height: 125px;
   }
 
+  .ticket-text,
+  .brochure-text {
+    font-size: 20px;
+  }
+
   #show-image {
     width: 200px;
     height: 150px;
@@ -673,5 +678,9 @@ ol.show-list:first-child {
 
   .contacts-right {
     font-size: 20px;
+  }
+
+  .to-hide-on-mobile {
+    display: none;
   }
 }
