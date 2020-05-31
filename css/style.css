@@ -653,4 +653,25 @@ ol.show-list:first-child {
   .brochure {
     height: 125px;
   }
+
+  #show-image {
+    width: 200px;
+    height: 150px;
+  }
+
+  .contacts-table {
+    width: 350px;
+  }
+
+  .contacts-left .left-text {
+    font-size: 20px;
+  }
+
+  .contacts-left .left-title {
+    font-size: 30px;
+  }
+
+  .contacts-right {
+    font-size: 20px;
+  }
 }
