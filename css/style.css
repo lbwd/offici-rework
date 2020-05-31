@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .top {
   display: flex;
   align-items: center;
