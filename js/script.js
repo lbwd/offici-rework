@@ -100,7 +100,7 @@ window.smoothScroll = function () {
       : targets[targets.indexOf(currentTarget) + 1];
   let button = document.getElementsByClassName('scroll-button')[0];
 
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
     target = 'top';
     button.classList.add('reversed');
   }
