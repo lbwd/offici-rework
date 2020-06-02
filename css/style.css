@@ -245,7 +245,7 @@ body {
     rgba(250, 250, 250, 1) 0%
   );
   background-image: url('../img/pattern.png');
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 
 .show-list {
@@ -377,7 +377,6 @@ ol.show-list:first-child {
   place-content: center;
   background-color: #fff8ee;
   background: linear-gradient(90deg, #fff0db 0%, #fff8ee 100%);
-  z-index: -1;
 }
 
 .downloads-container {
