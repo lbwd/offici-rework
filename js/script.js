@@ -1,27 +1,8 @@
-// window.addEventListener('scroll', (e) => {
-//   var border = document.getElementsByClassName('border')[0];
-//   // Width
-//   var initLeft = (document.body.offsetWidth - border.offsetWidth) / 2;
-//   if (initLeft - window.scrollY * 2 > 10) {
-//     border.style.left = initLeft - window.scrollY * 2 + 'px';
-//   } else {
-//     border.style.left = '10px';
-//   }
-//   // Height
-//   var initTop = (window.innerHeight - border.offsetHeight) / 2;
-//   if (initTop - window.scrollY > 10) {
-//     border.style.top = initTop - window.scrollY + 'px';
-//   } else {
-//     border.style.top = '10px';
-//   }
-//   // Dimension
-//   if (window.scrollY < 466) {
-//     border.style.transform =
-//       'scale(' + (100 - window.scrollY * 0.15) / 100 + ')';
-//   } else {
-//     border.style.transform = 'scale(0.30)';
-//   }
-// });
+/*
+  Offici x Luca Benedetti
+  - https://github.com/lbwd
+  - http://instagram.com/lucaunliked
+*/
 window.addEventListener('scroll', (e) => {
   const border = document.getElementsByClassName('border')[0];
   const logo = document.getElementsByClassName('logo-container')[0];
