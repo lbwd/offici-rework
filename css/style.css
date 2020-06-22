@@ -292,6 +292,12 @@ ol.show-list:first-child {
   background-size: 100% 0.27em;
 }
 
+.show-name a:link,
+.show-name a:visited {
+  color: black;
+  text-decoration: none;
+}
+
 .show-0 {
   background-image: linear-gradient(
     120deg,
@@ -399,6 +405,11 @@ ol.show-list:first-child {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
   padding-bottom: 25px;
+}
+
+.downloads-container a:link,
+.downloads-container a:visited {
+  color: black;
 }
 
 .brochure-text {
