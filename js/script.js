@@ -54,7 +54,7 @@ window.addEventListener('load', (e) => {
   document
     .getElementsByClassName('show-1')[0]
     .addEventListener('mouseover', (e) => {
-      document.getElementById('show-image').src = 'img/show-1.png';
+      document.getElementById('show-image').src = 'img/show-1.jpg';
     });
 
   document

@@ -259,6 +259,7 @@ body {
   font-size: 30px;
   font-weight: bold;
   z-index: 10;
+  margin-left: -50px;
 }
 
 ol.show-list {
@@ -266,18 +267,24 @@ ol.show-list {
   padding-left: 0;
 }
 
-ol.show-list > li {
-  counter-increment: customlistcounter;
-}
-
 ol.show-list > li:before {
-  content: '#' counter(customlistcounter);
-  float: left;
-  width: 1.5em;
+  content: '';
 }
 
-ol.show-list:first-child {
-  counter-reset: customlistcounter -1;
+ol.show-list > li {
+  display: flex;
+  align-items: center;
+}
+
+.active-show {
+  width: 50px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
 }
 
 .show-name {
@@ -299,15 +306,11 @@ ol.show-list:first-child {
 }
 
 .show-0 {
-  background-image: linear-gradient(
-    120deg,
-    #fedd02 0%,
-    rgb(255, 247, 192) 100%
-  );
+  background-image: linear-gradient(120deg, #fedd02 0%, #fff7c0 100%);
 }
 
 .show-1 {
-  /* background-image: linear-gradient(120deg, #90a2ee 0%, #7722a0 100%);*/
+  background-image: linear-gradient(120deg, #ff0063 0%, #f78bb4 100%);
 }
 
 .show-2 {
