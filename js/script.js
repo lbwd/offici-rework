@@ -60,7 +60,7 @@ window.addEventListener('load', (e) => {
   document
     .getElementsByClassName('show-2')[0]
     .addEventListener('mouseover', (e) => {
-      document.getElementById('show-image').src = 'img/show-2.png';
+      document.getElementById('show-image').src = 'img/show-2.jpg';
     });
 });
 
