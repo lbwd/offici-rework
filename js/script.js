@@ -62,6 +62,12 @@ window.addEventListener('load', (e) => {
     .addEventListener('mouseover', (e) => {
       document.getElementById('show-image').src = 'img/show-2.jpg';
     });
+
+  document
+    .getElementsByClassName('show-3')[0]
+    .addEventListener('mouseover', (e) => {
+      document.getElementById('show-image').src = 'img/show-3.jpg';
+    });
 });
 
 let currentTarget = 'top';

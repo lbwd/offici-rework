@@ -318,7 +318,7 @@ ol.show-list > li {
 }
 
 .show-3 {
-  /* background-image: linear-gradient(120deg, red 0%, red 100%); */
+  background-image: linear-gradient(120deg, #e96b52 0%, #ffcdc3 100%);
 }
 
 .show-disabled {
