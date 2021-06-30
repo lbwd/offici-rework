@@ -321,6 +321,10 @@ ol.show-list > li {
   background-image: linear-gradient(120deg, #e96b52 0%, #ffcdc3 100%);
 }
 
+.show-4 {
+  background-image: linear-gradient(120deg, #cffc03 0%, #dffc5c 100%);
+}
+
 .show-disabled {
   opacity: 0.05;
 }
