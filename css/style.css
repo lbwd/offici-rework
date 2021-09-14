@@ -126,7 +126,6 @@ body {
 .top-phrase {
   display: flex;
   align-items: center;
-  justify-content: center;
   font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
   height: 200px;
@@ -170,6 +169,12 @@ body {
     rgba(250, 250, 250, 1) 0%
   );
   background-image: url('../img/pattern.png');
+}
+
+.staff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slider {
@@ -323,6 +328,10 @@ ol.show-list > li {
 
 .show-4 {
   background-image: linear-gradient(120deg, #cffc03 0%, #dffc5c 100%);
+}
+
+.show-5 {
+  background-image: linear-gradient(120deg, #23bbea 0%, #7ce0ff 100%);
 }
 
 .show-disabled {
@@ -543,6 +552,7 @@ ol.show-list > li {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   place-content: center;
   color: #eee;
