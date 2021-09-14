@@ -247,7 +247,6 @@ body {
   display: flex;
   align-items: center;
   font-family: 'Source Sans Pro', sans-serif;
-  width: 100%;
   height: 200px;
   background: rgb(14, 14, 14);
   color: #eee;
@@ -256,10 +255,10 @@ body {
   z-index: 2;
 }
 
-.top-phrase span {
+.top-phrase > div {
   animation: phrase 5s linear infinite;
-  white-space: nowrap;
   z-index: 2;
+  min-width: 1719px;
 }
 
 @keyframes phrase {
@@ -743,7 +742,8 @@ ol.show-list > li {
 
 @media screen and (max-width: 1150px) {
   .downloads,
-  .now-bg {
+  .now-bg,
+  .shows {
     height: 100vh;
   }
 
