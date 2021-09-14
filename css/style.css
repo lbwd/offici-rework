@@ -293,7 +293,7 @@ body {
   font-size: 16px;
 }
 
-.staff div {
+.staff > div {
   width: 440px;
   display: flex;
 }
@@ -742,7 +742,8 @@ ol.show-list > li {
 }
 
 @media screen and (max-width: 1150px) {
-  .downloads {
+  .downloads,
+  .now-bg {
     height: 100vh;
   }
 
@@ -795,6 +796,14 @@ ol.show-list > li {
     font-size: 16px;
   }
 
+  .staff {
+    font-size: 12px;
+  }
+
+  .staff > div {
+    width: 340px;
+  }
+
   .cover-desktop {
     display: none;
   }
@@ -816,6 +825,10 @@ ol.show-list > li {
   .description {
     padding-left: 75px;
     padding-bottom: 200px;
+  }
+
+  .staff {
+    align-items: center;
   }
 
   .contacts-table {
